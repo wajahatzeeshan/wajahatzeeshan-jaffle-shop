@@ -5,9 +5,22 @@
 name: 'jaffle_shop'
 version: '1.0.0'
 config-version: 2
-
+# This section is used to configure the dbt Cloud environment.
+# The `dbt-cloud` key is used to specify the project ID in dbt Cloud
+# which is necessary for dbt Cloud to recognize and manage this project.
+# The project ID is unique to your dbt Cloud project and is used to link
+# this dbt project with the corresponding dbt Cloud project.
+# You can find your project ID in the dbt Cloud UI under the project settings.
+# The project ID is typically a numeric value and is essential for dbt Cloud
+# to correctly associate this project with the dbt Cloud environment.
+# For example, if your dbt Cloud project ID is 70471823488018,
+# you would set it as follows:
 dbt-cloud:
-    project-id: 70471823488018
+  project-id: 70471823488018
+# This allows dbt Cloud to manage the project, run jobs, and access the necessary resources
+# associated with this project.
+# Note: The project ID is sensitive information and should be kept secure.
+
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
