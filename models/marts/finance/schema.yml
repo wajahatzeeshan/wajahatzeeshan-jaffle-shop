@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: fct_orders
+      description: "Orders and payment for customers"
+      columns:
+          - name: order_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
