@@ -3,7 +3,7 @@ version: 2
 
 models:
     - name: dim_customers
-      description: "A starter dbt model"
+      description: "Customer dimension enriched with lifetime value and order activity"
       columns:
           - name: customer_id
             description: "The primary key for this table"
