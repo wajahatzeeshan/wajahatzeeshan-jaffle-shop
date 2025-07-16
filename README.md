@@ -1,15 +1,75 @@
-Welcome to your new dbt project!
+# jaffle_shop dbt Project
 
-### Using the starter project
+Welcome to the **jaffle_shop** dbt project!  
+This project demonstrates best practices for analytics engineering using [dbt](https://www.getdbt.com/).
 
-Try running the following commands:
-- dbt run
-- dbt test
+---
 
+## 🚀 Getting Started
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### Prerequisites
+
+- [dbt Core](https://docs.getdbt.com/docs/installation) installed locally
+- Access to your data warehouse
+- A configured `profiles.yml` in your `~/.dbt/` directory
+
+### Setup
+
+1. **Clone the repository**
+   ```sh
+   git clone <your-repo-url>
+   cd jaffle_shop
+   ```
+
+2. **Install dependencies**
+   ```sh
+   dbt deps
+   ```
+
+3. **Test your connection**
+   ```sh
+   dbt debug
+   ```
+
+4. **Run the project**
+   ```sh
+   dbt run
+   ```
+
+5. **Test your models**
+   ```sh
+   dbt test
+   ```
+
+---
+
+## 🗂️ Project Structure
+
+- `models/` - Your dbt models (SQL transformations)
+- `seeds/` - CSV files loaded as tables
+- `macros/` - Custom Jinja macros
+- `snapshots/` - Snapshots for slowly changing dimensions
+- `analyses/` - Ad-hoc analysis queries
+- `tests/` - Custom data tests
+
+---
+
+## 📚 Resources
+
+- [dbt Documentation](https://docs.getdbt.com/docs/introduction)
+- [dbt Discourse](https://discourse.getdbt.com/)
+- [dbt Community](https://getdbt.com/community)
+- [dbt Events](https://events.getdbt.com)
+- [dbt Blog](https://blog.getdbt.com/)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open issues or pull requests for improvements or questions.
+
+---
+
+## 📝 License
+
+This project is licensed under the
